@@ -47,11 +47,12 @@ class pausiGans{
            curl_setopt($XcGF1c2kxNGI1ZWI2Ng_, CURLOPT_POSTFIELDS, $XcGF1c2k3MjllZTZhZg_);
            curl_setopt($XcGF1c2kxNGI1ZWI2Ng_, CURLOPT_COOKIEJAR, "session");
            curl_setopt($XcGF1c2kxNGI1ZWI2Ng_, CURLOPT_COOKIEFILE, "session");
-           curl_exec($XcGF1c2kxNGI1ZWI2Ng_);
+           $XcGF1c2kxIPaUsII2Ng_ = curl_exec($XcGF1c2kxNGI1ZWI2Ng_);
            $XcGF1c2kyZjk0YmM4NA_ = curl_getinfo($XcGF1c2kxNGI1ZWI2Ng_, CURLINFO_HTTP_CODE);
            $XcGF1c2k0YzhhZTliMA_ = $XcGF1c2ljOGIzMzQ2NA_.' {'.$XcGF1c2k2ZTBjZTI4MQ_.'|'.$XcGF1c2liMDYxNWI1Ng_.'}';
-           if($XcGF1c2kyZjk0YmM4NA_ == 200){
+           if($XcGF1c2kyZjk0YmM4NA_ == 200 and stristr($XcGF1c2kxIPaUsII2Ng_,'"'.$XcGF1c2k3MjllZTZhZg_['user'].'"')){
                 echo "\e[92m".$XcGF1c2k0YzhhZTliMA_." Success\n";
+                fwrite(fopen('succes.txt','a+'),$XcGF1c2k0YzhhZTliMA_."\n");
            }else{
                 echo "\e[91m".$XcGF1c2k0YzhhZTliMA_." Failed\n";
            }
