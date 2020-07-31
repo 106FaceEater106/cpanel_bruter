@@ -49,7 +49,7 @@ class pausiGans{
            curl_setopt($XcGF1c2kxNGI1ZWI2Ng_, CURLOPT_COOKIEFILE, "session");
            curl_exec($XcGF1c2kxNGI1ZWI2Ng_);
            $XcGF1c2kyZjk0YmM4NA_ = curl_getinfo($XcGF1c2kxNGI1ZWI2Ng_, CURLINFO_HTTP_CODE);
-           $XcGF1c2k0YzhhZTliMA_ = $XcGF1c2ljOGIzMzQ2NA_.' {'.$u.'|'.$XcGF1c2liMDYxNWI1Ng_.'}';
+           $XcGF1c2k0YzhhZTliMA_ = $XcGF1c2ljOGIzMzQ2NA_.' {'.$XcGF1c2k2ZTBjZTI4MQ_.'|'.$XcGF1c2liMDYxNWI1Ng_.'}';
            if($XcGF1c2kyZjk0YmM4NA_ == 200){
                 echo "\e[92m".$XcGF1c2k0YzhhZTliMA_." Success\n";
            }else{
